@@ -1,7 +1,6 @@
 import os
 import asyncio
 import discord
-import nest_asyncio
 from discord.ext import commands
 from openai import OpenAI
 
