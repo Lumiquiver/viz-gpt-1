@@ -5,8 +5,6 @@ import nest_asyncio
 from discord.ext import commands
 from openai import OpenAI
 
-# Apply nest_asyncio for environments like Colab
-nest_asyncio.apply()
 
 # 2. CONFIGURATION
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
