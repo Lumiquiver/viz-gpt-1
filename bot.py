@@ -167,7 +167,15 @@ app.secret_key = "vizpanel"
 
 @app.route("/")
 def home():
-    return "Bot is running."
+    return """
+    <h1>VizGPT Bot Running</h1>
+    <p>Status: Online</p>
+    <a href="https://youtu.be/dQw4w9WgXcQ">Control Panel</a>
+    """
+
+@app.route("/health")
+def health():
+    return "OK", 200
 
 @app.route("/rickroll")
 def rickroll():
@@ -266,8 +274,7 @@ def panel():
     )
 
 def run_web():
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=PORT)
 
 threading.Thread(target=run_web).start()
 
