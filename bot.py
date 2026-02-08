@@ -16,7 +16,7 @@ PANEL_PASSWORD = os.getenv("PANEL_PASSWORD")
 
 ADMIN_NAME = "VizDaViz"
 
-MODEL_NAME = "nousresearch/hermes-3-llama-3.1-405b:free"
+MODEL_NAME = "meta-llama/llama-3.2-3b-instruct:free"
 BOT_ENABLED = True
 TEMPERATURE = 0.7
 
